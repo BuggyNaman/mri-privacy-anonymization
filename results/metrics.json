@@ -1,0 +1,38 @@
+{
+  "device": "mps",
+  "epochs": 30,
+  "classifier_epochs": 12,
+  "splits": {
+    "train": 171,
+    "val": 31,
+    "test": 51
+  },
+  "reconstruction": {
+    "baseline": {
+      "roi_psnr": 22.406796900814143,
+      "roi_ssim": 0.650893549217389,
+      "full_psnr": 24.819797473778987,
+      "full_ssim": 0.6758504634509667
+    },
+    "proposed": {
+      "roi_psnr": 35.235124985546264,
+      "roi_ssim": 0.9345267015735252,
+      "full_psnr": 24.037405953458467,
+      "full_ssim": 0.7701561676448702
+    }
+  },
+  "classification": {
+    "clean": {
+      "accuracy": 0.8235294117647058,
+      "f1": 0.847457627118644
+    },
+    "baseline": {
+      "accuracy": 0.6666666666666666,
+      "f1": 0.7301587301587301
+    },
+    "proposed": {
+      "accuracy": 0.8235294117647058,
+      "f1": 0.847457627118644
+    }
+  }
+}
